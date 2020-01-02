@@ -34,7 +34,12 @@ const PRODUCTS = [
     stocked: false,
     name: "iPhone 5",
   },
-  { category: "Electronics", price: "$199.99", stocked: true, name: "Nexus 7" },
+  {
+    category: "Electronics",
+    price: "$199.99",
+    stocked: true,
+    name: "Nexus 7",
+  },
 ];
 
 function App() {
