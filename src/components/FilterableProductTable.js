@@ -90,7 +90,7 @@ const SearchBar = props => {
   );
 };
 
-function FilterableProductTable(props) {
+const FilterableProductTable = props => {
   const [filterText, setFilterText] = useState("");
   const [inStockOnly, setInStockOnly] = useState(false);
 
@@ -113,6 +113,6 @@ function FilterableProductTable(props) {
       />
     </div>
   );
-}
+};
 
 export default FilterableProductTable;
