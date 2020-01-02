@@ -91,32 +91,12 @@ const SearchBar = props => {
 };
 
 function FilterableProductTable(props) {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     filterText: "",
-  //     inStockOnly: false,
-  //   };
-  //   this.handleFilterTextChange = this.handleFilterTextChange.bind(this);
-  //   this.handleInStockChange = this.handleInStockChange.bind(this);
-  // }
-
   const [filterText, setFilterText] = useState("");
   const [inStockOnly, setInStockOnly] = useState(false);
 
-  function handleFilterTextChange(filterText) {
-    // this.setState({
-    //   filterText,
-    // });
-    setFilterText(filterText);
-  }
+  const handleFilterTextChange = filterText => setFilterText(filterText);
 
-  function handleInStockChange(inStockOnly) {
-    // this.setState({
-    //   inStockOnly,
-    // });
-    setInStockOnly(inStockOnly);
-  }
+  const handleInStockChange = inStockOnly => setInStockOnly(inStockOnly);
 
   return (
     <div>
